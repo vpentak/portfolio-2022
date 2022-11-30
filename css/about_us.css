@@ -18,7 +18,7 @@ nav{
 nav li{
     display: block;
     padding: 7px;
-    border: gold dotted 5px;
+    border: white dotted 5px;
     margin: 7px;
 }
   
@@ -39,14 +39,14 @@ nav a{
 }
 
 nav a:active, a:hover {
-    color:            gold;
+    color:            white;
     text-decoration: underline;
     /* background-color: #4f81bd; */
     /* border: black dotted 5px; */
 }
 
 a.current {
-    color:            gold;
+    color:            white;
     text-decoration: underline;
 }
 
