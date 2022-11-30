@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/life.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>The Weeknd's Life</title>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        function display() {
+            if (document.getElementById("nav_bar").style.display="none") {
+                document.getElementById("nav_bar").style.display="inline";
+            }
+        }
+
+        $(function(){
+        $('a').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+            }
+        });
+        });
+    </script>
+</head>
+
+<!--mobile view: normal, min-600: all images on one side, min-800: 3 columns, 6 rows-->
+<body>
+    <header>
+        <a class="skip" href="#skip">XO</a>
+        <!-- <h1>XO</h1> -->
+        <nav>
+            <button id="nav_arrow" onclick="display()">↓</button>
+            <ul id="nav_bar">
+                <li class="nav_item"><a href="songs.html">Songs</a></li>
+                <li class="nav_item"><a href="life.html">Life</a></li>
+                <li class="nav_item"><a href="about_us.html">About Us</a></li>
+                <li class="nav_item"><a href="fans.html">Fans</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+    <main id="skip">
+        <h1>Abel's Timeline</h1>
+        <div id="timeline">
+            <div id="first_img">
+                <img src="images/life_1.jpeg" alt="Baby picture of the Weeknd.">
+            </div>
+            <!-- <div id = "first_text"> -->
+                <h2 id = "first_text_1">February 1990</h2>
+                <p id = "first_text_2">
+                    Born on February 16, 1990
+                </p>
+            <!-- </div> -->
+
+
+            <div id="second_img">
+                <img src="images/life_2.jpeg" alt="Video picture of one of the Weeknd's first songs.">
+                
+            </div>
+            <!-- <div id="second_text"> -->
+                <h2 id="second_text_1">December 2010</h2>
+                <p id="second_text_2">
+                    Uploaded "Loft Music", "What You Need", and "The Morning" on Youtube with the username "xoxxxoooxo"
+                </p>
+            <!-- </div> -->
+
+
+            <div id="third_img">
+                <img src="images/life_3.png" alt="Album cover art of the Weeknd's Trilogy">
+            </div>
+            <!-- <div id="third_text"> -->
+                <h2 id="third_text_1">November 2012</h2>
+                <p id="third_text_2">
+                    Released "Trilogy" which became #4 on the Billboards     
+                </p>
+            <!-- </div> -->
+            
+
+            <div id="fourth_img">
+                <img src="images/life_4.jpeg" alt="Kiss Land album cover!">     
+            </div>
+            <!-- <div id="fourth_text"> -->
+                <h2 id="fourth_text_1">September 2013</h2>
+                <p id="fourth_text_2">
+                    Released his album "Kiss Land" which reached #2 on the U.S. Billboard 200, and he sold 273,000 copies of the album
+                </p>
+            <!-- </div> -->
+            
+            <div id="fifth_img">
+                <img src="images/life_5.jpeg" alt="Remixed Drunk in Love with Rihanna cover art">
+            </div>
+            <!-- <div id="fifth_text"> -->
+                <h2 id="fifth_text_1">April 2014</h2>
+                <p id="fifth_text_2">
+                    Remixed "Drunk in Love" with Rihanna, duetted Arianna Grande for "Love Me Harder", realeased a song for Fifty Shades of Grey titled "Earned It"    
+                </p>
+            <!-- </div> -->
+
+            <div id="sixth_img">
+                <img src="images/life_6.jpeg" alt="The Weeknd earning an award.">
+            </div>
+            <!-- <div id="sixth_text"> -->
+                <h2 id="sixth_text_1">June 2015</h2>
+                <p id="sixth_text_2">
+                    Won a Centric Award for his song "Earned It", which he performed with Alicia Keys     
+                </p>
+            <!-- </div> -->
+
+
+            <div id="seventh_img">
+                <img src="images/life_7.jpeg" alt="Starboy album cover art.">
+            </div>
+            <!-- <div id="seventh_text"> -->
+                <h2 id="seventh_text_1">November 2016</h2>
+                <p id="seventh_text_2">
+                    Released "Starboy", an album that remained at #1 on U.S. Billoards 200 for quite a while.    
+                </p>
+            <!-- </div> -->
+
+
+            <div id="eighth_img">
+                <img src="images/life_8.jpeg" alt="The Weeknd kissing his Grammy award">
+            </div>
+            <!-- <div id="eighth_text"> -->
+                <h2 id="eighth_text_1">February 2017</h2>
+                <p id="eighth_text_2">
+                    Received a Grammy nomiation for the 60th Annual Grammy for Best Urban Contemporary Album for his album "Starboy" (and won!).
+                </p>
+            <!-- </div> -->
+
+
+            <div id="ninth_img">
+                <img src="images/life_9.jpeg" alt="After Hours cover art.">
+            </div>
+            <!-- <div id="ninth_text"> -->
+                <h2 id="ninth_text_1">July 2022</h2>
+                <p id="ninth_text_2">
+                    Went on tour for two combined albums "After Hours" and "Dawn FM" after pushing back his tour earlier in the year    
+                </p>
+            <!-- </div> -->
+
+        </div>
+    </main>
+    
+     <footer class="main">
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/theweeknd/" aria-label="ClosedFacebook" class="fa fa-facebook"></a>
+            </li>
+            <li class="icon twitter">
+                <a href="https://twitter.com/theweeknd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="ClosedTwitter" class="fa fa-twitter"></a>
+            </li>
+            <li class="icon instagram">
+                <a href="https://www.instagram.com/theweeknd/?hl=en" aria-label="ClosedInstagram" class="fa fa-instagram"></a>
+            </li>
+            <li class="icon youtube">
+                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" aria-label="ClosedYoutube" class="fa fa-youtube"></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- <script>
+        function display() {
+            // document.getElementById("#nav_bar").style.background="pink";
+            if (document.getElementById("#nav_bar").style.visibility="hidden") {
+                document.getElementById("#nav_bar").style.visibility="visible";
+            }
+            else {
+                document.getElementById("#nav_bar").style.visibility="hidden";
+            }
+            // document.getElementById("#nav_bar").style.display="inline";
+            // document.getElementById("#nav_bar").style.visibility="visible";
+        }
+    </script> -->
+    <script src="js/nav.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</body>
+</html>

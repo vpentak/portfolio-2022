@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fans.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Fans</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        function display() {
+            if (document.getElementById("nav_bar").style.display="none") {
+                document.getElementById("nav_bar").style.display="inline";
+            }
+            else
+                document.getElementById("nav_bar").style.display="none";
+        }
+
+        $(function(){
+        $('a').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+            }
+        });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a class="skip" href="#skip">XO</a>
+        <nav>
+            <button id="nav_arrow" onclick="display()">↓</button>
+            <ul id="nav_bar">
+                <li class="nav_item"><a href="songs.html">Songs</a></li>
+                <li class="nav_item"><a href="life.html">Life</a></li>
+                <li class="nav_item"><a href="about_us.html">About Us</a></li>
+                <li class="nav_item"><a href="fans.html">Fans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>MERCH</h1>
+        <hr/>
+        <div class="fansPageRowWrapper">
+            <h1>STARBOY</h1>
+            <div class="fansPageRowContent">
+                <div class="fansPageRowContentCard">
+                    <img src="images/starboy1.png" alt="One piece from the Weeknd's merch!"/>
+                    <p>This Starboy shirt is a personalized favorite. It was released on Etsy, and can be bought at this <a href="https://www.etsy.com/listing/1327332783/abel-starboy-unisex-t-shirt-double-sided?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=the+weeknd+starboy+merch&ref=sc_gallery-1-2&pro=1&frs=1&col=1&plkey=ec0144a6738e1e0bda8799684030a501fee73c76%3A1327332783">link!</a></p>
+                </div>
+                <div class="fansPageRowContentCard">
+                    <img src="images/starboy2.png" alt="One piece from the Weeknd's merch!"/>
+                    <p>This Starboy poster is a great addition to any lonely wall. It can be found on Amazon. If interested it is linked <a href="https://www.amazon.com/ZXETY-Weeknd-Starboy-Poster-Unframe/dp/B0BG7SM6YM/ref=sr_1_6?keywords=The%2BWeeknd%2BStarboy%2BClothes&qid=1669803306&sr=8-6&th=1">here!</a></p>
+                </div>
+                <div class="fansPageRowContentCard">
+                    <img src="images/merch_3.jpeg" alt="One piece from the Weeknd's merch!"/>
+                    <p>This Starboy sweatshirt is from one of the Weeknd's most limited editions. It was released just a few weeks ago, and can be bought <a href="https://www.urbanoutfitters.com/shop/the-weeknd-uo-exclusive-dawn-fm-hoodie-sweatshirt?inventoryCountry=US&color=044&size=L&utm_kxconfid=vx6q4l3b6&gclid=Cj0KCQiAm5ycBhCXARIsAPldzoW2LyXTDHFto7fjmfFyENAccndjNegUaRn4xIAshCukbewJujCPJTQaArQ8EALw_wcB&gclsrc=aw.ds&type=REGULAR&quantity=1">here!</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="fansPageRowWrapper">
+            <h1>AFTER HOURS</h1>
+            <div class="fansPageRowContent">
+                <div class="fansPageRowContentCard">
+                    <img src="images/merch_4.jpeg" alt="One piece from the Weeknd's merch!"/>
+                    <p>This Starboy sweatshirt is from one of the Weeknd's most limited editions. It was released just a few weeks ago, and can be bought here!</p>
+                </div>
+                <div class="fansPageRowContentCard">
+                    <img src="images/merch_2.jpeg" alt="One piece from the Weeknd's merch!"/>
+                    <p>This After Hours sweatshirt is from one of the Weeknd's most limited editions. It was released just a few weeks ago, and can be bought here!</p>
+                </div>
+                <div class="fansPageRowContentCard">
+                    <img src="images/merch_6.jpeg" alt="One piece from the Weeknd's merch!"/>
+                    <p>This After Hours sweatshirt is from one of the Weeknd's most limited editions. It was released just a few weeks ago, and can be bought <a href="https://www.flava-clothing.com/products/the-weeknd-after-hours-sweatshirt">here!</a></p>
+                </div>
+            </div>
+        </div>
+        <h1>CONCERTS</h1>
+        <hr/>
+        <div class="fansPageRowWrapper">
+            <div class="fansPageRowContent">
+                <div class="fansPageRowContentCard">
+                    <h1>Past</h1>
+                    <img src="images/concert5.png" alt="The Weeknd performing!"/>
+                    <p>The Weeknd perfoming a few years ago.</p>
+                </div>
+                <div class="fansPageRowContentCard">
+                    <h1>Current</h1>
+                    <img src="images/concert4.png" alt="The Weeknd performing!"/>
+                    <p>The weeknd perfoming at a recent concert.</p>
+                </div>
+                <div class="fansPageRowContentCard">
+                    <h1>Future</h1>
+                    <img src="images/concert3.png" alt="The Weeknd performing!"/>
+                    <p>The Weeknd currently has no future tour plans.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main">
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/theweeknd/" aria-label="ClosedFacebook" class="fa fa-facebook"></a>
+            </li>
+            <li class="icon twitter">
+                <a href="https://twitter.com/theweeknd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="ClosedTwitter" class="fa fa-twitter"></a>
+            </li>
+            <li class="icon instagram">
+                <a href="https://www.instagram.com/theweeknd/?hl=en" aria-label="ClosedInstagram" class="fa fa-instagram"></a>
+            </li>
+            <li class="icon youtube">
+                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" aria-label="ClosedYoutube" class="fa fa-youtube"></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</body>
+</html>

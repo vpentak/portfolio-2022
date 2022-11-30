@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/about_us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>About Us</title>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        function display() {
+            // document.getElementById("#nav_bar").style.background="pink";
+            if (document.getElementById("nav_bar").style.display="none") {
+                document.getElementById("nav_bar").style.display="inline";
+            }
+            // document.getElementById("#nav_bar").style.display="inline";
+            // document.getElementById("#nav_bar").style.visibility="visible";
+        }
+
+        $(function(){
+        $('a').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+            }
+        });
+        });
+    </script>
+</head>
+<body>
+    <!-- <div class="header">
+        <a href="#default" class="logo">CompanyLogo</a>
+    </div> -->
+    <!-- <a class="skip" href="#skip">Skip to Main Content</a> -->
+    <header>
+        <a class="skip" href="#skip">XO</a>
+        <!-- <h1>XO</h1> -->
+        <nav>
+            <button id="nav_arrow" onclick="display()">↓</button>
+            <ul id="nav_bar">
+                <li class="nav_item"><a href="songs.html">Songs</a></li>
+                <li class="nav_item"><a href="life.html">Life</a></li>
+                <li class="nav_item"><a href="about_us.html">About Us</a></li>
+                <li class="nav_item"><a href="fans.html">Fans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="skip">
+        <h1>About US!</h1>
+        <img src="images/about_us_1.jpg" alt="Sasha and Vishu having a good time together!" id="pic_tog">
+        <p>
+            Our Names are Vishu and Sasha and we are the biggest Weeknd fans out there!
+        </p>
+
+        <p class="description">
+            <span class="name_style">Vishu:</span> I was first introduced to The Weeknd about 6 years ago by my sister who was a very big fan at the time, and I didn't think I would like his music because I was not interested in rap. However, I quickly became a fan of his song 'Starboy' and began listening to his music a lot more. Seeing that he was collaborating with other amazing artists such as Arianna Grande and Rihanna made me even more interested in listening to his music. After consistently listening to his albums, I found that he was in my top 5 most listened to artist for the past three or so years. After watching his Super Bowl Halftime Show I became more astonished by his talent. For all these reasons, I tried to buy tickets to his After Hours Til Dawn Concert last year in December but he pushed his show back and I was worried I wouldn't get the chance to see him live. Fortunately, he continued his show in the summer and I paid $500 for floor seats in the seventh row, two seats away from the stage. The experience of seeing one of my favorite artists perform in person was one I will never forget, and it reminded me that tears of joy are real. If you are interested in seeing a video of him waving at me during the concert, reach out!
+        </p>
+
+        <p class="description">
+            <span class="name_style">Sasha:</span> I first heard about The Weeknd through one of my close friends in school. I started listening to his Starboy album and soon fell in love with his music. I started branching out and exploring his older songs and I was never really disappointed by his music. He was creative and always on top. I loved his performance for the Super Bowl, which I found fairly interpretive in comparison to historic performances. I am really excited to see what he does next and hope you enjoy the rest of our site!
+        </p>
+        
+    </main>
+
+    <footer class="main">
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/theweeknd/" aria-label="ClosedFacebook" class="fa fa-facebook"></a>
+            </li>
+            <li class="icon twitter">
+                <a href="https://twitter.com/theweeknd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="ClosedTwitter" class="fa fa-twitter"></a>
+            </li>
+            <li class="icon instagram">
+                <a href="https://www.instagram.com/theweeknd/?hl=en" aria-label="ClosedInstagram" class="fa fa-instagram"></a>
+            </li>
+            <li class="icon youtube">
+                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" aria-label="ClosedYoutube" class="fa fa-youtube"></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</body>
+</html>
