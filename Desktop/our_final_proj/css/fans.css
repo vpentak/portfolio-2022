@@ -1,0 +1,409 @@
+/* nav styling */
+#nav_arrow {
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    border: red;
+}
+
+nav{
+    background-color: red;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+	flex-direction: column;
+    justify-content: space-between;
+    padding: 7px;
+}
+nav li{
+    display: block;
+    padding: 7px;
+    border: gold dotted 5px;
+    margin: 7px;
+}
+  
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 15px;
+    padding: 5px;
+    /* border: gold dotted 5px; */
+    /* padding: 20px 0px 20px 0px; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nav_bar {
+    display: none;
+    /* visibility: hidden; */
+}
+
+nav a:active, a:hover {
+    color:            gold;
+    text-decoration: underline;
+    /* background-color: #4f81bd; */
+    /* border: black dotted 5px; */
+}
+
+a.current {
+    color:            gold;
+    text-decoration: underline;
+}
+
+
+
+
+.skip {
+    background: black;
+    left: 0;
+    display: block;
+    /* padding: 6px; */
+    /* -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out; */
+    z-index: 1;
+    color:white;
+    /* padding: 20px 10px; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0px;
+    height: 0;
+}
+.skip:link { text-decoration: none; }
+/* the footer */
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main {
+      display:flex;
+  }
+
+.fa {
+    color:black;
+  }
+
+html,
+body {
+  place-items: center;
+}
+
+.wrapper {
+    margin:auto;
+    display: inline-flex;
+    list-style: none;
+}
+
+.wrapper .icon {
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.fa-facebook {
+    background: white;
+    color: black;
+}
+
+.fa-twitter {
+    background: white;
+    color: black;
+}
+
+.fa-youtube {
+    background: white;
+    color: black;
+}
+.fa-instagram {
+    background: white;
+    color: black;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+
+/* main content */
+main{
+    padding: 0 3%;
+    background-color: black;
+}
+
+hr {
+    visibility: hidden;
+}
+
+main>h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.fansPageRowWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fansPageRowWrapper>h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.fansPageRowContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fansPageRowContentCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 18px;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.fansPageRowContentCard>h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.fansPageRowContentCard>img{
+    border: 1px solid black;
+    height: 30vh;
+    margin-bottom: 20px;
+}
+
+
+/* TABLET */
+@media screen and (min-width: 600px){
+    /* nav styling */
+    #nav_arrow {
+        visibility: hidden;
+    }
+    
+    #nav_bar {
+        display: inline;
+    }
+    
+    nav{
+        background-color: red;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        padding: 7px;
+    }
+    nav li{
+        display: block;
+        padding: 15px;
+        /* border: gold dotted 5px; */
+        border: none;
+        margin: 15px;
+    }
+      
+    nav a{
+        color: black;
+        font-weight: bold;
+        text-decoration: none; 
+        font-size: 20px;
+        padding: 12px;
+        border: gold dotted 5px;
+        /* border: gold dotted 5px; */
+        /* padding: 20px 0px 20px 0px; */
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    nav a:active, a:hover {
+        color:            gold;
+        text-decoration: underline;
+        /* background-color: #4f81bd; */
+        /* border: black dotted 5px; */
+    }
+    
+    a.current {
+        color:            gold;
+        text-decoration: underline;
+    }
+    main{
+        padding: 0 3%;
+        background-color: black;
+    }
+    
+    main>h1{
+        font-size: 40px;
+        font-weight: 800;
+        color: white;
+    }
+    
+    .fansPageRowWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fansPageRowWrapper>h1{
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    .fansPageRowContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .fansPageRowContentCard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 18px;
+        width: 100%;
+        padding: 20px 40px;
+        background-color: white;
+        margin-bottom: 50px;
+    }
+    
+    .fansPageRowContentCard>h1{
+        font-size: 30px;
+        font-weight: 900;
+        width: 40%;
+    }
+    
+    .fansPageRowContentCard>img{
+        border: 1px solid black;
+        height: 10vh;
+        margin-right: 30px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px){
+    main{
+        padding: 0 3%;
+        background-color: black;
+    }
+    
+    main>h1{
+        font-size: 40px;
+        font-weight: 800;
+        color: white;
+        text-align: left;
+        padding-top:10px;
+    }
+    
+    .fansPageRowWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fansPageRowWrapper>h1{
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    .fansPageRowContent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .fansPageRowContentCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 18px;
+        width: 23%;
+        padding: 20px 40px;
+        background-color: white;
+        margin-bottom: 50px;
+    }
+    
+    .fansPageRowContentCard>h1{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    
+    .fansPageRowContentCard>img{
+        border: 1px solid black;
+        height: 30vh;
+        margin-bottom: 20px;
+    }
+
+    /* nav styling */
+    #nav_arrow {
+        visibility: hidden;
+    }
+    
+    #nav_bar {
+        display: inline;
+    }
+    
+    nav{
+        background-color: red;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        align-items: center;
+        padding: 7px;
+    }
+    nav li{
+        display: inline-block;
+        padding: 15px;
+        /* border: gold dotted 5px; */
+        margin: 15px;
+    }
+      
+    nav a{
+        color: black;
+        font-weight: bold;
+        text-decoration: none; 
+        font-size: 20px;
+        padding: 20px;
+        border: gold dotted 5px;
+        /* border: gold dotted 5px; */
+        /* padding: 20px 0px 20px 0px; */
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    
+    nav a:active, a:hover {
+        color:            gold;
+        text-decoration: underline;
+        /* background-color: #4f81bd; */
+        /* border: black dotted 5px; */
+    }
+    
+    a.current {
+        color:            gold;
+        text-decoration: underline;
+    }
+}
